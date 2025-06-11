@@ -16,19 +16,21 @@ function Icon(props) {
 function Navbar(props) {
 
   return (
-    <div className="p-[24px] shadow-md grid gap-4 grid-cols-3 grid-rows-1 items-center justify-items-center font-header">
-      <div className="grid gap-[32px] grid-cols-2 grid-rows-1 items-center justify-items-center">
-        <Tabs order="1." tab="About"/>
-        <Tabs order="2." tab="Experience"/>
-      </div>
+    <header className="sticky top-0">
+      <nav className="bg-dark-blue p-[24px] shadow-md grid gap-4 grid-cols-3 grid-rows-1 items-center justify-items-center font-header ">
+        <div className="grid gap-[32px] grid-cols-2 grid-rows-1 items-center justify-items-center">
+          <Tabs order="1." tab="About"/>
+          <Tabs order="2." tab="Experience"/>
+        </div>
 
-      <Icon />
+        <Icon />
 
-      <div className="grid gap-[32px] grid-cols-2 grid-rows-1 items-center justify-items-center">
-        <Tabs order="3." tab="Work"/>
-        <Tabs order="4." tab="Contact"/>
-      </div>
-    </div>
+        <div className="grid gap-[32px] grid-cols-2 grid-rows-1 items-center justify-items-center">
+          <Tabs order="3." tab="Work"/>
+          <Tabs order="4." tab="Contact"/>
+        </div>
+      </nav>
+    </header>
   )
 }
 
