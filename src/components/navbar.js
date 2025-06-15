@@ -1,15 +1,15 @@
 
 function Tabs(props) {
   return (
-    <button className="text-white hover:text-light-blue focus:text-light-blue focus:underline "><strong className="text-light-blue">{props.order}</strong>{props.tab}</button>
+    <button className="text-white hover:text-light-blue focus:text-light-blue focus:underline "><strong className="text-light-blue mr-[12px]">{props.order}</strong>{props.tab}</button>
   )
 }
 
 function Icon(props) {
   return (
-    <span className="material-symbols-outlined text-white font-bold text-[50px] hover:text-light-blue drop-shadow-xl">
+    <button className="material-symbols-outlined text-white font-bold text-[50px] hover:text-light-blue drop-shadow-xl">
       code
-    </span>
+    </button>
   )
 }
 
