@@ -1,7 +1,7 @@
 
 function Tabs(props) {
   return (
-    <button className="text-white hover:text-light-blue focus:text-light-blue focus:underline "><strong className="text-light-blue mr-[12px]">{props.order}</strong>{props.tab}</button>
+    <button className="text-white hover:text-light-blue focus:text-light-blue focus:underline underline-offset-[4px] "><strong className="text-light-blue mr-[12px]">{props.order}</strong>{props.tab}</button>
   )
 }
 

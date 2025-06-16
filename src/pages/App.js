@@ -17,13 +17,13 @@ function Section1 (props) {
 
 function Section2 (props) {
   return (
-    <div className="container mx-auto mt-[200px] mb-[360px]">
+    <section className="container mx-auto mt-[200px] mb-[360px]">
       <h1 className="before:content-['1.'] before:mr-[10px] before:text-light-blue before:font-bold after:content-[] text-white font-header text-[18px]">About me</h1>
       <hr className="border-t border-light-gray my-4" />
       <p className="text-light-gray">
 
       </p>
-    </div>
+    </section>
   )
 }
 
