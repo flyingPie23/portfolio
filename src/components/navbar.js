@@ -16,7 +16,7 @@ function Icon(props) {
 function Navbar(props) {
 
   return (
-    <header className="sticky top-0">
+    <header>
       <nav className="bg-dark-blue p-[24px] shadow-md grid gap-4 grid-cols-3 grid-rows-1 items-center justify-items-center font-header ">
         <div className="grid gap-[32px] grid-cols-2 grid-rows-1 items-center justify-items-center">
           <Tabs order="1." tab="About"/>
