@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 function Section1() {
   return (
-    <section className="md:my-[200px] md:mx-[150px] md:py-[40px]">
+    <section className="md:my-[200px] md:mx-[150px] md:py-[40px] lg:my-[300px] lg:mx-[200px]">
       <h2 className="font-header text-[28px] text-light-blue">Hello! welcome to my portfolio.</h2>
       <h1 className="font-header text-[48px] font-extrabold text-white">Driss Freah</h1>
       <p className="text-light-gray">
@@ -18,7 +18,7 @@ function Section1() {
 
 function Section2(props) {
   return (
-  <section id="About" className="md:my-[200px] md:mx-[150px] md:py-[40px]">
+  <section id="About" className="md:my-[200px] md:mx-[150px] md:py-[40px] lg:my-[300px] lg:mx-[200px]">
     <h1 className="before:content-['1.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">About me</h1>
     <hr className="border-t border-light-gray my-4" />
     <div className="flex">
@@ -55,8 +55,45 @@ function Section3(props) {
   const pending = "text-light-gray font-header font-semibold p-[8px] mr-[22px] hover:text-white underline-offset-[8px] hover:underline"
   const [order, setOrder] = useState(1)
 
+  const Experience1 = () =>{
+    return (
+      <div className="text-light-gray mt-6 w-[100%] h-[100%] p-[12px]">
+        <p className="text-light-gray font-header font-semibold max-w-[50%]">
+          In this period I had just finished my high school studies and pretty much knew that I wanted to pursue a career in Tech. So I started researching and learning in my own time. <br/>
+          <br/>
+          That led me to join the  <strong className="text-header text-light-blue">Le Wagon Webdev bootcamp</strong>, where I acquired  <strong className="text-header text-light-blue">Le Wagon's certification</strong>  and the  <strong className="text-header text-light-blue">RNCP level 6 certification</strong>. <br/>
+          <br/>
+          As a beginner I had to learn the basics, starting with the programming language  <strong className="text-header text-light-blue">Driss</strong>  and all of the necessary  <strong className="text-header text-light-blue">OPP</strong> rules and practices. Then I learned about  <strong className="text-header text-light-blue">data manipulation</strong> and <strong className="text-header text-light-blue">data managment</strong>
+          using <strong className="text-header text-light-blue">Sql</strong> and <strong className="text-header text-light-blue">Postgres</strong>.
+          Following that up was <strong className="text-header text-light-blue">UX UI research</strong> and translating that to <strong className="text-header text-light-blue">user-friendly, responsive wireframes</strong> on <strong className="text-header text-light-blue">Figma</strong>. And of course, the next step was to learn <strong className="text-header text-light-blue">front-end</strong> concepts and learning <strong className="text-header text-light-blue">HTML</strong> and <strong className="text-header text-light-blue">CSS</strong>. Then
+          some <strong className="text-header text-light-blue">Javascript</strong> to make said <strong className="text-header text-light-blue">dynamic design</strong> and for <strong className="text-header text-light-blue">Api managment</strong> while also learning to make <strong className="text-header text-light-blue">MVC</strong> and <strong className="text-header text-light-blue">Saas</strong> apps from scratch on <strong className="text-header text-light-blue">Ruby on Rails</strong> and <strong className="text-header text-light-blue">deploy</strong> them on <strong className="text-header text-light-blue">Heroku</strong>.
+        </p>
+      </div>
+    )
+  }
+
+  const Experience2 = () =>{
+    return (
+      <div className="text-light-gray mt-6 w-[100%] h-[100%] p-[12px]">
+        <p className="text-light-gray font-header font-semibold ">
+          Experience details for 2023-24
+        </p>
+      </div>
+    )
+  }
+
+  const Experience3 = () =>{
+    return (
+      <div className="text-light-gray mt-6 w-[100%] h-[100%] p-[12px]">
+        <p className="text-light-gray font-header font-semibold ">
+          Experience details for 2025-today
+        </p>
+      </div>
+    )
+  }
+
   return (
-    <section id="Experience" className="md:my-[200px] md:mx-[150px] md:py-[40px]">
+    <section id="Experience" className="md:my-[200px] md:mx-[150px] md:py-[40px] lg:my-[300px] lg:mx-[200px]">
        <h1 className="before:content-['2.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">Experience</h1>
        <hr className="border-t border-light-gray my-4" />
 
@@ -65,12 +102,22 @@ function Section3(props) {
         <button id="2" className={order === 2 ? active : pending} onClick={() => setOrder(2)}> 2023-24 </button>
         <button id="3" className={order === 3 ? active : pending} onClick={() => setOrder(3)}> 2024-today </button>
        </div>
+
+       {
+        order === 1 ? (
+          <Experience1/>
+        ) : order === 2 ? (
+          <Experience2/>
+        ) : order === 3 ? (
+          <Experience3/>
+        ) : null
+       }
     </section>
-  );
+    );
 }
 
 function App() {
-  const skills = ["Html5","Css","Javascript","Sql","Postgress","Git Version controle","Ruby on Rails", "React js", "Figma"];
+  const skills = ["Html5","Css","Javascript","Sql","Postgress","Heroku deployment","Ruby on Rails", "React js", "Figma"];
 
   return (
     <div className="main-page">
