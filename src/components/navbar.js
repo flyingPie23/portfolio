@@ -7,7 +7,7 @@ function Tabs(props) {
 
 function Icon(props) {
   return (
-    <button className="material-symbols-outlined text-white font-bold text-[50px] hover:text-light-blue drop-shadow-xl">
+    <button className="material-symbols-outlined text-white font-bold text-[50px] hover:text-light-blue">
       code
     </button>
   )
