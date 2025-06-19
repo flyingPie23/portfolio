@@ -20,7 +20,7 @@ function Section2 (props) {
 
 
   return (
-    <section className="mt-[180px] mb-[250px] md:mx-[120px] xl:mx-[200px] xl:mb-[350px] xl:mt-[280px]">
+    <section className="mt-[120px] mb-[250px] md:mx-[120px] xl:mx-[200px] xl:mb-[350px] xl:mt-[280px]">
       <h1 className="before:content-['1.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">About me</h1>
       <hr className="border-t border-light-gray my-4" />
       <div className="flex">
