@@ -1,24 +1,24 @@
 
 import Navbar from "../components/navbar";
+import { useState } from 'react';
 
 function Section1() {
   return (
-    <section className="mt-[180px] mb-[250px] md:mx-[120px] xl:mx-[200px] xl:mb-[350px] xl:mt-[280px]">
+    <section className="md:my-[200px] md:mx-[150px] md:py-[40px]">
       <h2 className="font-header text-[28px] text-light-blue">Hello! welcome to my portfolio.</h2>
       <h1 className="font-header text-[48px] font-extrabold text-white">Driss Freah</h1>
       <p className="text-light-gray">
-        And I'm a software developer and UI UX designer. I have worked multiple projects as a fullstack dev either in a team or as a solo dev.  <br/>
-        If you would like to see some of these projects and get to know me and how I got here you're in luck ! <br/>
-        oh and heres my <a href={require("../assets/files/drissCV.pdf")} download className="text-light-blue font-bold underline">resume</a> just incase.
+      And I'm a software developer and UI UX designer. I have worked multiple projects as a fullstack dev either in a team or as a solo dev.  <br/>
+      If you would like to see some of these projects and get to know me and how I got here you're in luck ! <br/>
+      oh and heres my <a href={require("../assets/files/drissCV.pdf")} download className="text-light-blue font-bold underline">resume</a> just incase.
       </p>
     </section>
-  );
+    );
 }
 
-// Use forwardRef to allow ref to be attached from parent
 function Section2(props) {
   return (
-    <section  id="About" className="md:mt-[180px] mb-[250px] md:mx-[120px] md: xl:mx-[200px] xl:mb-[250px] xl:mt-[380px] xl:pt-[180px]">
+  <section id="About" className="md:my-[200px] md:mx-[150px] md:py-[40px]">
     <h1 className="before:content-['1.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">About me</h1>
     <hr className="border-t border-light-gray my-4" />
     <div className="flex">
@@ -31,7 +31,7 @@ function Section2(props) {
           such as <strong className="text-header text-light-blue">writing clean efficient code, collaboration</strong> and <strong className="text-header text-light-blue">UX UI principles</strong> that I still follow to this day. <br/>
           And I've been able to hone these skills even further in my most prominent role yet, as part of the <strong className="text-header text-light-blue">Teaching Staff</strong> here at le Wagon's Casablanca, providing lectures and guidance to people looking to start their own tech journey. <br/>
           <br/>
-          And now I'm focused on learning as much as I can in an always changing and evolving field that I'm really passionate about while trying to deliver noticeable impact on <strong className="text-header text-light-blue">user-friendly</strong> projects,
+          And now I'm focus`ed on learning as much as I can in an always changing and evolving field that I'm really passionate about while trying to deliver noticeable impact on <strong className="text-header text-light-blue">user-friendly</strong> projects,
           whether they be my own ideas, or part of a thriving team.<br/>
           <br/>
           Here's some of the languages, frameworks and tools that I use:
@@ -51,11 +51,21 @@ function Section2(props) {
 };
 
 function Section3(props) {
+  const active = "text-light-blue font-header font-semibold p-[8px] mr-[22px] underline underline-offset-[8px]"
+  const pending = "text-light-gray font-header font-semibold p-[8px] mr-[22px] hover:text-white underline-offset-[8px] hover:underline"
+  const [order, setOrder] = useState(1)
+
   return (
-     <section id="Experience"  className="md:mt-[180px] mb-[250px] md:mx-[120px] md: xl:mx-[200px] xl:mb-[250px] xl:mt-[380px] xl:pt-[180px]">
-        <h1 className="before:content-['2.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">Experience</h1>
-        <hr className="border-t border-light-gray my-4" />
-     </section>
+    <section id="Experience" className="md:my-[200px] md:mx-[150px] md:py-[40px]">
+       <h1 className="before:content-['2.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">Experience</h1>
+       <hr className="border-t border-light-gray my-4" />
+
+       <div className="flex">
+        <button id="1" className={order === 1 ? active : pending} onClick={() => setOrder(1)}> 2022-23 </button>
+        <button id="2" className={order === 2 ? active : pending} onClick={() => setOrder(2)}> 2023-24 </button>
+        <button id="3" className={order === 3 ? active : pending} onClick={() => setOrder(3)}> 2024-today </button>
+       </div>
+    </section>
   );
 }
 
