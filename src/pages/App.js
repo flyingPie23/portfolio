@@ -149,7 +149,7 @@ function Section4(props) {
           </svg>
 
           <a href={props.project.link} className="hover:translate-y-[-8px] ease-in duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className="inline-block ml-2 align-middle text-blue group-hover:text-white transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" className="inline-block ml-2 align-middle text-blue group-hover:text-white transition-colors duration-300">
               <path d="M14 3v2h3.59L10 12.59 11.41 14 19 6.41V10h2V3h-7zm-9 4h7V5H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7H5V7z" fill="currentColor"/>
             </svg>
           </a>
@@ -164,7 +164,7 @@ function Section4(props) {
         <div className="flex flex-row content-end absolute bottom-[34px] left-[34px]  text-light-gray">
           {
             props.project.tools && props.project.tools.map((tool, idx) => (
-              <p key={idx} className="mr-[12px] font-header font-semibold max-w-[70%] group-hover:text-white transition-colors duration-300  group-hover:text-white transition-colors duration-300">{tool}</p>
+              <p key={idx} className="mr-[12px] font-header max-w-[70%] group-hover:text-white transition-colors duration-300  group-hover:text-white transition-colors duration-300">{tool}</p>
             ))
           }
 
@@ -197,14 +197,47 @@ function Section5(props) {
       <h1 className="before:content-['4.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">How to get in touch:</h1>
       <hr className="border-t border-light-gray my-4" />
 
-      <div className="text-center mx-auto">
-        <h1 className="">Intrested with my work ?</h1>
-        <p>Im always looking for new opertunities</p>
+      <div className="justify-center text-center mx-auto">
+          <h1 className="font-header text-[48px] font-extrabold text-white">Intrested with my work ?</h1>
+          <p className="mx-[80px] mt-[24px] text-light-gray">
+            Im always looking for new opertunities wether we can colaborate on something or maybe you might be intrested in my freelance services either way my inbox will always
+            be open, and i will always make time to replay as fast as possible <br/>
+            <br/>
+            and i will leave you with this, try reaching me on Linkdin or Upwork. and if you want to see i made or im making check my full Github Profile im always learning and making stuff so it is worth checking out
+
+          </p>
+
+        <div className="mt-[100px] justify-center flex flex-row">
+          <a href="https://github.com/flyingPie23" target="_blank" rel="noreferrer" className="mr-[20px] ease-in duration-300 hover:translate-y-[-12px] ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32" fill="none" className="text-light-gray hover:text-white transition-colors duration-300">
+              <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.71-2.78.61-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.11 2.51.32 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z" fill="currentColor" />
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/driss-freah-b7b811271/" target="_blank" rel="noreferrer" className="mr-[20px] ease-in duration-300 hover:translate-y-[-12px] ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32" fill="none" className="text-light-gray hover:text-white transition-colors duration-300">
+              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM8.5 18H6V9h2.5v9zM7.25 7.75c-.83 0-1.5-.67-1.5-1.5S6.42 4.75 7.25 4.75s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM18 18h-2.5v-4.5c0-1.1-.9-2-2-2s-2 .9-2 2V18H9V9h2.5v1.25c.5-.75 1.5-1.25 2.5-1.25 2.21 0 4 1.79 4 4V18z" fill="currentColor" />
+            </svg>
+          </a>
+
+          <a href="https://www.upwork.com/freelancers/~0139e1712f12f6282c" target="_blank" rel="noreferrer" className="mr-[20px] ease-in duration-300 hover:translate-y-[-12px] ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32" fill="none" className="text-light-gray hover:text-white transition-colors duration-300">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5.5 13.5h-1.75v-2.25c0-.69-.56-1.25-1.25-1.25s-1.25.56-1.25 1.25v2.25H12v-2.25c0-.69-.56-1.25-1.25-1.25s-1.25.56-1.25 1.25v2.25H7.5V9h1.75v1.25c.5-.75 1.5-1.25 2.5-1.25 1.1 0 2.1.5 2.5 1.25.5-.75 1.5-1.25 2.5-1.25 1.66 0 3 1.34 3 3v3.5z" fill="currentColor" />
+            </svg>
+          </a>
+
+          <a href="mailto:driss.freah@example.com" className="mr-[20px] ease-in duration-300 hover:translate-y-[-12px] ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32" fill="none" className="text-light-gray hover:text-white transition-colors duration-300">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 11 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z" fill="currentColor" />
+            </svg>
+          </a>
+
+        </div>
 
       </div>
 
     </section>
-  )
+    )
 }
 
 function App() {
