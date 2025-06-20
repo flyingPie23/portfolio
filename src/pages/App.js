@@ -18,8 +18,8 @@ function Section1() {
 
 function Section2(props) {
   return (
-  <section id="About" className="md:my-[200px] md:mx-[150px] md:py-[40px] lg:my-[300px] lg:mx-[200px]">
-    <h1 className="before:content-['1.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">About me</h1>
+  <section id="About" className="md:my-[150px] md:mx-[150px] md:py-[40px] lg:my-[250px] lg:py-[100px] lg:mx-[200px]">
+    <h1 className="before:content-['1.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">Who i am:</h1>
     <hr className="border-t border-light-gray my-4" />
     <div className="flex">
       <div>
@@ -75,26 +75,38 @@ function Section3(props) {
   const Experience2 = () =>{
     return (
       <div className="text-light-gray mt-6 w-[100%] h-[100%] p-[12px]">
-        <p className="text-light-gray font-header font-semibold ">
-          Experience details for 2023-24
+        <p className="text-light-gray font-header font-semibold max-w-[50%] ">
+          During this time I embraced my first role as a <strong className="text-header text-light-blue">freelance teacher</strong> at <strong className="text-header text-light-blue">Le Wagon Casablanca</strong>, where I've given lectures on <strong className="text-header text-light-blue">UX/UI design (Figma, user research,
+          prototyping)</strong>  and provided <strong className="text-header text-light-blue">hands-on training</strong> on <strong className="text-header text-light-blue">HTML, CSS, JavaScript, Ruby on Rails, Heroku deployment, best coding practices</strong> and <strong className="text-header text-light-blue">project development</strong>. <br/>
+          <br/>
+          From <strong className="text-header text-light-blue">December 2023</strong> till <strong className="text-header text-light-blue">February 2024</strong>, I <strong className="text-header text-light-blue">co-managed a 9-week web development bootcamp</strong> for
+          <strong className="text-header text-light-blue"> 30+</strong> students, providing <strong className="text-header text-light-blue">mentorship</strong>, <strong className="text-header text-light-blue">overseeing projects</strong>, and ensuring a <strong className="text-header text-light-blue">hands-on learning</strong> experience
+          in <strong className="text-header text-light-blue">full-stack development</strong> and <strong className="text-header text-light-blue">UX/UI design</strong>.<br/>
+          <br/>
+          This period of my <strong className="text-header text-light-blue">career</strong> has taught me a lot about <strong className="text-header text-light-blue">clear</strong> and <strong className="text-header text-light-blue">effective communication</strong> while working with a <strong className="text-header text-light-blue">diverse group of people</strong> and how to <strong className="text-header text-light-blue">guide</strong> and <strong className="text-header text-light-blue">transfer knowledge</strong> in a way that can lead to more <strong className="text-header text-light-blue">productivity</strong> and a <strong className="text-header text-light-blue">good work atmosphere</strong>.
         </p>
       </div>
-    )
+      )
   }
 
   const Experience3 = () =>{
     return (
       <div className="text-light-gray mt-6 w-[100%] h-[100%] p-[12px]">
-        <p className="text-light-gray font-header font-semibold ">
-          Experience details for 2025-today
+        <p className="text-light-gray font-header font-semibold w-[50%] ">
+          And now I still mainly do <strong className="text-header text-light-blue">freelance</strong> work either at the <strong className="text-header text-light-blue">Le Wagon</strong> campus or on sites like <strong className="text-header text-light-blue">Upwork</strong>. <br/>
+          <br/>
+          I have also been focused on improving my craft by learning new things, such as front-end libraries like <strong className="text-header text-light-blue">Tailwind</strong> and <strong className="text-header text-light-blue">Bootstrap</strong> and honing my <strong className="text-header text-light-blue">JavaScript</strong> skills by learning <strong className="text-header text-light-blue">React.js</strong> and <strong className="text-header text-light-blue">TypeScript</strong>.
+          I've also been practicing <strong className="text-header text-light-blue">creating</strong> and <strong className="text-header text-light-blue">managing</strong> <strong className="text-header text-light-blue">RESTful APIs</strong> using my expertise in <strong className="text-header text-light-blue">Ruby on Rails</strong>. <br/>
+          <br/>
+          I remain to this day a <strong className="text-header text-light-blue">young</strong>, <strong className="text-header text-light-blue">passionate</strong> developer trying to <strong className="text-header text-light-blue">thrive</strong> and <strong className="text-header text-light-blue">learn</strong> in a domain that's always <strong className="text-header text-light-blue">evolving</strong> while finding my place in the middle of the <strong className="text-header text-light-blue">AI revolution</strong>.
         </p>
       </div>
     )
   }
 
   return (
-    <section id="Experience" className="md:my-[200px] md:mx-[150px] md:py-[40px] lg:my-[300px] lg:mx-[200px]">
-       <h1 className="before:content-['2.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">Experience</h1>
+    <section id="Experience" className="md:my-[150px] md:mx-[150px] md:py-[40px] lg:my-[200px] lg:mx-[200px]">
+       <h1 className="before:content-['2.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">My Journey:</h1>
        <hr className="border-t border-light-gray my-4" />
 
        <div className="flex">
@@ -120,7 +132,7 @@ function App() {
   const skills = ["Html5","Css","Javascript","Sql","Postgress","Heroku deployment","Ruby on Rails", "React js", "Figma"];
 
   return (
-    <div className="main-page">
+    <div className="main-page relative">
       <Navbar/>
       <Section1 />
       <Section2 skills={skills} />
