@@ -2,9 +2,10 @@
 import Navbar from "../components/navbar";
 import { useState } from 'react';
 
+
 function Section1() {
   return (
-    <section className="md:my-[200px] md:mx-[150px] md:py-[40px] lg:my-[300px] lg:mx-[200px]">
+    <section className="md:my-[200px] md:mx-[150px] lg:my-[250px] lg:mx-[200px]">
       <h2 className="font-header text-[28px] text-light-blue">Hello! welcome to my portfolio.</h2>
       <h1 className="font-header text-[48px] font-extrabold text-white">Driss Freah</h1>
       <p className="text-light-gray">
@@ -18,7 +19,7 @@ function Section1() {
 
 function Section2(props) {
   return (
-  <section id="About" className="md:my-[150px] md:mx-[150px] md:py-[40px] lg:my-[250px] lg:py-[100px] lg:mx-[200px]">
+  <section id="About" className="md:my-[150px] md:mx-[150px] md:py-[40px] lg:my-[200px] lg:mx-[200px]">
     <h1 className="before:content-['1.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">Who i am:</h1>
     <hr className="border-t border-light-gray my-4" />
     <div className="flex">
@@ -44,7 +45,7 @@ function Section2(props) {
           ))}
         </div>
       </div>
-      <img className="h-[80%] w-[40%] ml-[40px] rounded-[12px] shadow-[14px_16px_0px_0px_#48A6A7] hover:shadow-[20px_22px_0px_0px_#48A6A7] hover:translate-x-[-4px] hover:translate-y-[-4px]" src="https://media.istockphoto.com/id/1388648617/photo/confident-caucasian-young-man-in-casual-denim-clothes-with-arms-crossed-looking-at-camera.jpg?s=612x612&w=0&k=20&c=YxctPklAOJMmy6Tolyvn45rJL3puk5RlKt39FO46ZeA=" alt="" />
+      <img className="h-[80%] w-[40%] ml-[40px] rounded-[12px] shadow-[14px_16px_0px_0px_#48A6A7] hover:shadow-[20px_22px_0px_0px_#48A6A7] hover:translate-x-[-4px] hover:translate-y-[-4px] ease-in-out duration-300" src="https://media.istockphoto.com/id/1388648617/photo/confident-caucasian-young-man-in-casual-denim-clothes-with-arms-crossed-looking-at-camera.jpg?s=612x612&w=0&k=20&c=YxctPklAOJMmy6Tolyvn45rJL3puk5RlKt39FO46ZeA=" alt="" />
     </div>
   </section>
   )
@@ -128,6 +129,34 @@ function Section3(props) {
     );
 }
 
+function Section4(props) {
+  const WorkCard = (props)=> {
+    return (
+     <div className="text-white h-[250px] my-[22px] p-[24px] border border-blue ease-in duration-300 hover:bg-blue hover:translate-y-[-10px]">
+      <div>
+
+
+      </div>
+     </div>
+    )
+  }
+  return (
+    <section id="Work" className="md:my-[150px] md:mx-[150px] md:py-[40px] lg:my-[200px] lg:mx-[200px]">
+      <h1 className="before:content-['3.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">What i have worked on:</h1>
+      <hr className="border-t border-light-gray my-4" />
+
+      <div className="grid grid-cols-3 gap-[24px]">
+        <WorkCard/>
+        <WorkCard/>
+        <WorkCard/>
+      </div>
+
+    </section>
+
+  )
+
+}
+
 function App() {
   const skills = ["Html5","Css","Javascript","Sql","Postgress","Heroku deployment","Ruby on Rails", "React js", "Figma"];
 
@@ -137,6 +166,7 @@ function App() {
       <Section1 />
       <Section2 skills={skills} />
       <Section3/>
+      <Section4/>
     </div>
   );
 }
