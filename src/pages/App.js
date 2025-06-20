@@ -198,7 +198,7 @@ function Section5(props) {
       <hr className="border-t border-light-gray my-4" />
 
       <div className="justify-center text-center mx-auto">
-          <h1 className="font-header text-[48px] font-extrabold text-white">Intrested with my work ?</h1>
+          <h1 className="font-header text-[48px] font-extrabold text-white">want to reach out ?</h1>
           <p className="mx-[80px] mt-[24px] text-light-gray">
             Im always looking for new opertunities wether we can colaborate on something or maybe you might be intrested in my freelance services either way my inbox will always
             be open, and i will always make time to replay as fast as possible <br/>
