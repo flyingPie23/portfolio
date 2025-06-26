@@ -130,40 +130,38 @@ function Section3(props) {
 }
 
 function Section4(props) {
-  const WorkCard = (props)=> {
+  function WorkCard(props) {
     return (
       <div className="text-white h-[300px] my-[10px] p-[34px] border border-blue ease-in duration-300 hover:bg-blue hover:translate-y-[-12px] group relative">
-        <div className="flex justify-center justify-between mb-[24px]">
+        <div className="flex  justify-between mb-[24px]">
 
           <a href={props.project.linkRepo} target="_blank" rel="noreferrer" className="hover:translate-y-[-8px] ease-in duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-blue group-hover:text-white transition-colors duration-300">
-              <path d="M10.414 4l2 2H20c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h6.414zM4 6v12h16V8h-8.414l-2-2H4z" fill="currentColor"/>
+              <path d="M10.414 4l2 2H20c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h6.414zM4 6v12h16V8h-8.414l-2-2H4z" fill="currentColor" />
             </svg>
           </a>
 
           <a href={props.project.linkProject} target="_blank" rel="noreferrer" className="hover:translate-y-[-8px] ease-in duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" className="inline-block ml-2 align-middle text-blue group-hover:text-white transition-colors duration-300">
-              <path d="M14 3v2h3.59L10 12.59 11.41 14 19 6.41V10h2V3h-7zm-9 4h7V5H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7H5V7z" fill="currentColor"/>
+              <path d="M14 3v2h3.59L10 12.59 11.41 14 19 6.41V10h2V3h-7zm-9 4h7V5H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7H5V7z" fill="currentColor" />
             </svg>
           </a>
         </div>
 
-        <h1 className="font-header font-bold text-light-blue group-hover:text-white transition-colors duration-300 text-[22px]">
+        <h1 className="font-header font-bold text-light-blue group-hover:text-white transition-colors duration-300 text-[18px]">
           {props.project.title}
         </h1>
 
         <p className="text-light-gray font-header font-semibold max-w-[70%] group-hover:text-white transition-colors duration-300">{props.project.description}.</p>
 
         <div className="flex flex-row content-end absolute bottom-[34px] left-[34px]  text-light-gray">
-          {
-            props.project.tools && props.project.tools.map((tool, idx) => (
-              <p key={idx} className="mr-[12px] font-header max-w-[70%] group-hover:text-white transition-colors duration-300  group-hover:text-white transition-colors duration-300">{tool}</p>
-            ))
-          }
+          {props.project.tools && props.project.tools.map((tool, idx) => (
+            <p key={idx} className="mr-[12px] font-header max-w-[70%]  group-hover:text-white transition-colors duration-300">{tool}</p>
+          ))}
 
         </div>
       </div>
-    )
+    );
   }
   return (
     <section id="Work" className="md:mt-[150px] md:mb-[250px] md:mx-[150px] md:py-[40px] lg:mt-[250px] lg:mb-[300px] lg:mx-[200px] lg:py-[80px]">
@@ -219,7 +217,7 @@ function Section5(props) {
             </svg>
           </a>
 
-          <a href="mailto:driss.freah@example.com" className="mr-[20px] ease-in duration-300 hover:translate-y-[-12px] ">
+          <a href="mailto:drissfreah325@gmail.com" className="mr-[20px] ease-in duration-300 hover:translate-y-[-12px] ">
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 32 32" fill="none" className="text-light-gray hover:text-white transition-colors duration-300">
               <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 11 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z" fill="currentColor" />
             </svg>
@@ -237,7 +235,7 @@ function App() {
   const skills = ["Html5","Css","Javascript","Sql","Postgress","Heroku deployment","Ruby on Rails", "React js", "Figma"];
   const projects = [
     {linkProject: "https://flyingpie23.github.io/Overwatch-randomiser-challenge/#/", linkRepo: "https://github.com/flyingPie23/Overwatch-randomiser-challenge/tree/main", title: "Overwatch Randomiser Challenge", description: "a fun new mode for an already fun game", tools: ["ReactJs", "Tailwindcss"]},
-    {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title2", description: "a quick description of the project.2", tools: ["tool", "tool", "tool"]},
+    {linkProject: "https://www.figma.com/proto/5ErHEFPrPMs3qbpcTOx4JG/airbnb?node-id=2-49&p=f&t=inTb23wFWBL9p0oR-0&scaling=scale-down&content-scaling=fixed&page-id=2%3A49&starting-point-node-id=46%3A360",linkRepo: "https://www.figma.com/design/5ErHEFPrPMs3qbpcTOx4JG/airbnb?node-id=2-49&p=f&t=inTb23wFWBL9p0oR-0", title: "Airbnb clone wireframe", description: "a simple clone of the airbnb landing page", tools: ["Figma"]},
     {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title3", description: "a quick description of the project.3", tools: ["tool", "tool", "tool"]},
     {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title4", description: "a quick description of the project.4", tools: ["tool"]},
     {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title5", description: "a quick description of the project.5", tools: ["tool"]},
