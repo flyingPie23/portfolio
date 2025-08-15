@@ -1,6 +1,7 @@
 
 import Navbar from "../components/navbar";
 import { useState } from 'react';
+import photo from "../assets/images/photo.jpg";
 
 
 function Section1(props) {
@@ -19,35 +20,35 @@ function Section1(props) {
 
 function Section2(props) {
   return (
-  <section id="About" className="md:mt-[150px] md:mb-[250px] md:mx-[150px] md:py-[40px] lg:mt-[250px] lg:mb-[300px] lg:mx-[200px] lg:py-[80px]">
-    <h1 className="before:content-['1.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">Who i am:</h1>
-    <hr className="border-t border-light-gray my-4" />
-    <div className="flex">
-      <div>
-        <p className="text-light-gray mr-[40px] ">
-          Hey there! my name is  <strong className="text-header text-light-blue">Driss</strong> and I'm a Developer. I started my tech journey back in <strong className="text-header text-light-blue">2022</strong> when I was just turning <strong className="text-header text-light-blue">18.</strong>  <br/>
-          <br/>
-          Straight after finishing high school I knew I wanted to get a career in software development. It started with a passion for game design and after starting the <a href="https://www.lewagon.com/" target="_blank" rel="noreferrer" className="text-header text-light-blue underline font-bold">le Wagon's</a> bootcamp
-          here at Casablanca where I'm from, it quickly became an interest in designing and the whole front-end aspect of web development. In there I had the wonderful opportunity to learn amongst a talented group of my peers skills that helped throughout my journey
-          such as <strong className="text-header text-light-blue">writing clean efficient code, collaboration</strong> and <strong className="text-header text-light-blue">UX UI principles</strong> that I still follow to this day. <br/>
-          And I've been able to hone these skills even further in my most prominent role yet, as part of the <strong className="text-header text-light-blue">Teaching Staff</strong> here at le Wagon's Casablanca, providing lectures and guidance to people looking to start their own tech journey. <br/>
-          <br/>
-          And now I'm focus`ed on learning as much as I can in an always changing and evolving field that I'm really passionate about while trying to deliver noticeable impact on <strong className="text-header text-light-blue">user-friendly</strong> projects,
-          whether they be my own ideas, or part of a thriving team.<br/>
-          <br/>
-          Here's some of the languages, frameworks and tools that I use:
-        </p>
-        <div className="grid grid-cols-3 gap-[4px] mt-[32px]">
-          {props.skills && props.skills.map((skill, idx) => (
-            <p key={idx} className="text-light-gray before:content-['*'] before:mr-[10px]  before:text-light-blue before:font-bold text-[14px] text-header font-bold">
-              {skill}
-            </p>
-          ))}
+    <section id="About" className="md:mt-[150px] md:mb-[250px] md:mx-[150px] md:py-[40px] lg:mt-[250px] lg:mb-[300px] lg:mx-[200px] lg:py-[80px]">
+      <h1 className="before:content-['1.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">Who i am:</h1>
+      <hr className="border-t border-light-gray my-4" />
+      <div className="flex">
+        <div>
+          <p className="text-light-gray mr-[40px] ">
+            Hey there! my name is  <strong className="text-header text-light-blue">Driss</strong> and I'm a Developer. I started my tech journey back in <strong className="text-header text-light-blue">2022</strong> when I was just turning <strong className="text-header text-light-blue">18.</strong>  <br/>
+            <br/>
+            Straight after finishing high school I knew I wanted to get a career in software development. It started with a passion for game design and after starting the <a href="https://www.lewagon.com/" target="_blank" rel="noreferrer" className="text-header text-light-blue underline font-bold">le Wagon's</a> bootcamp
+            here at Casablanca where I'm from, it quickly became an interest in designing and the whole front-end aspect of web development. In there I had the wonderful opportunity to learn amongst a talented group of my peers skills that helped throughout my journey
+            such as <strong className="text-header text-light-blue">writing clean efficient code, collaboration</strong> and <strong className="text-header text-light-blue">UX UI principles</strong> that I still follow to this day. <br/>
+            And I've been able to hone these skills even further in my most prominent role yet, as part of the <strong className="text-header text-light-blue">Teaching Staff</strong> here at le Wagon's Casablanca, providing lectures and guidance to people looking to start their own tech journey. <br/>
+            <br/>
+            And now I'm focus`ed on learning as much as I can in an always changing and evolving field that I'm really passionate about while trying to deliver noticeable impact on <strong className="text-header text-light-blue">user-friendly</strong> projects,
+            whether they be my own ideas, or part of a thriving team.<br/>
+            <br/>
+            Here's some of the languages, frameworks and tools that I use:
+          </p>
+          <div className="grid grid-cols-3 gap-[4px] mt-[32px]">
+            {props.skills && props.skills.map((skill, idx) => (
+              <p key={idx} className="text-light-gray before:content-['*'] before:mr-[10px]  before:text-light-blue before:font-bold text-[14px] text-header font-bold">
+                {skill}
+              </p>
+            ))}
+          </div>
         </div>
+        <img className="h-[80%] w-[40%] ml-[40px] rounded-[12px] shadow-[14px_16px_0px_0px_#48A6A7] hover:shadow-[20px_22px_0px_0px_#48A6A7] hover:translate-x-[-4px] hover:translate-y-[-4px] ease-in-out duration-300" src={photo} alt="" />
       </div>
-      <img className="h-[80%] w-[40%] ml-[40px] rounded-[12px] shadow-[14px_16px_0px_0px_#48A6A7] hover:shadow-[20px_22px_0px_0px_#48A6A7] hover:translate-x-[-4px] hover:translate-y-[-4px] ease-in-out duration-300" src="https://media.istockphoto.com/id/1388648617/photo/confident-caucasian-young-man-in-casual-denim-clothes-with-arms-crossed-looking-at-camera.jpg?s=612x612&w=0&k=20&c=YxctPklAOJMmy6Tolyvn45rJL3puk5RlKt39FO46ZeA=" alt="" />
-    </div>
-  </section>
+    </section>
   )
 };
 
@@ -184,7 +185,7 @@ function Section4(props) {
 
 function Section5(props) {
   return (
-    <section id="Contact" className="md:mt-[150px] md:mb-[250px] md:mx-[150px] md:py-[40px] lg:mt-[250px] lg:mb-[300px] lg:mx-[200px] lg:py-[80px]">
+    <section id="Contact" className="md:mt-[150px] md:mb-[150px] md:mx-[150px] md:py-[40px] lg:mt-[250px] lg:mb-[300px] lg:mx-[200px] lg:py-[80px]">
       <h1 className="before:content-['4.'] before:mr-[10px] before:text-light-blue before:font-bold  text-white font-header text-[28px]">How to get in touch:</h1>
       <hr className="border-t border-light-gray my-4" />
 
@@ -236,13 +237,7 @@ function App() {
   const projects = [
     {linkProject: "https://flyingpie23.github.io/Overwatch-randomiser-challenge/#/", linkRepo: "https://github.com/flyingPie23/Overwatch-randomiser-challenge/tree/main", title: "Overwatch Randomiser Challenge", description: "a fun new mode for an already fun game", tools: ["ReactJs", "Tailwindcss"]},
     {linkProject: "https://www.figma.com/proto/5ErHEFPrPMs3qbpcTOx4JG/airbnb?node-id=2-49&p=f&t=inTb23wFWBL9p0oR-0&scaling=scale-down&content-scaling=fixed&page-id=2%3A49&starting-point-node-id=46%3A360",linkRepo: "https://www.figma.com/design/5ErHEFPrPMs3qbpcTOx4JG/airbnb?node-id=2-49&p=f&t=inTb23wFWBL9p0oR-0", title: "Airbnb clone wireframe", description: "a simple clone of the airbnb landing page", tools: ["Figma"]},
-    {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title3", description: "a quick description of the project.3", tools: ["tool", "tool", "tool"]},
-    {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title4", description: "a quick description of the project.4", tools: ["tool"]},
-    {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title5", description: "a quick description of the project.5", tools: ["tool"]},
-    {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title6", description: "a quick description of the project.6", tools: ["tool",]},
-    {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title7", description: "a quick description of the project.7", tools: ["tool", "tool"]},
-    {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title8", description: "a quick description of the project.8", tools: ["tool", "tool"]},
-    {linkProject: "https://github.com/flyingPie23",linkRepo: "https://github.com/flyingPie23", title: "this a title9", description: "a quick description of the project.9", tools: ["tool"]}
+    {linkProject: "https://github.com/flyingPie23/chatapi-backend",linkRepo: "https://github.com/flyingPie23/chatapi-backend", title: "rails chatroom api", description: "still in development live chat api system", tools: ["Ruby on Rails", "Postgres", "Postman"]}
   ]
 
   return (
