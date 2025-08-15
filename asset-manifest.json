@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.838accfa.css",
+    "main.js": "/portfolio/static/js/main.5dd26500.js",
+    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
+    "static/media/photo.jpg": "/portfolio/static/media/photo.b16d9739172b7846231f.jpg",
+    "static/media/drissCV.pdf": "/portfolio/static/media/drissCV.9e0fc47a33746c61abd8.pdf",
+    "index.html": "/portfolio/index.html",
+    "main.838accfa.css.map": "/portfolio/static/css/main.838accfa.css.map",
+    "main.5dd26500.js.map": "/portfolio/static/js/main.5dd26500.js.map",
+    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.838accfa.css",
+    "static/js/main.5dd26500.js"
+  ]
+}
